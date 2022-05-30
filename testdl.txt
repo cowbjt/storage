@@ -1,0 +1,19 @@
+{
+  "args": {}, 
+  "data": "{\"sensor\":\"aaaa\"}", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept-Encoding": "identity;q=1,chunked;q=0.1,*;q=0", 
+    "Content-Length": "17", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "ESP32HTTPClient", 
+    "X-Amzn-Trace-Id": "Root=1-6294dba4-70b780822a1449a25459ddbf"
+  }, 
+  "json": {
+    "sensor": "aaaa"
+  }, 
+  "origin": "114.45.5.51", 
+  "url": "https://httpbin.org/post"
+}
