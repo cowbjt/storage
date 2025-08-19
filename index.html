@@ -16,7 +16,7 @@
 
     function refreshFrame(){
         console.log(`refresh iframe`);
-        document.getElementById('ragic_webview').contentWindow.location.reload(true);
+        document.getElementById('ragic_webview').src = document.getElementById('ragic_webview').src;
     }
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
