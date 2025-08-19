@@ -1,7 +1,7 @@
 <html>
 
 <body>
-<input type="button" onclick="javascript:refreshFrame();" value="Refresh-2" />
+<input type="button" onclick="javascript:refreshFrame();" value="Refresh-3" />
 
 <div id="ragic_webview"></div>
 <script>
@@ -13,6 +13,11 @@
     var fieldSummary = true;
     var applyDefaultView = true;
     var showSheetName = true;
+
+    function refreshFrame(){
+    console.log(`refresh iframe`);
+        document.getElementById('ragic_webview').contentWindow.location.reload(true);
+    }
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function () {
@@ -25,13 +30,6 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://www.ragic.com/?ref_noscript">Online database form by Ragic.</a></noscript>
 <a href="https://www.ragic.com" id="ragic-link">online database form by <span class="logo-ragic">Ragic</span></a>
-    
-<script type="text/javascript">
-function refreshFrame(){
-    console.log(`refresh iframe`);
-    document.getElementById('ragic_webview').contentWindow.location.reload(true);
-}
-</script>
 
 </body>
 </html>
