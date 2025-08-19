@@ -1,6 +1,6 @@
-<div>
-222
-</div>
+
+
+<input type="button" onclick="javascript:refreshFrame();" value="Refresh-1" />
 
 <div id="ragic_webview"></div>
 <script>
@@ -25,3 +25,8 @@
 <noscript>Please enable JavaScript to view the <a href="https://www.ragic.com/?ref_noscript">Online database form by Ragic.</a></noscript>
 <a href="https://www.ragic.com" id="ragic-link">online database form by <span class="logo-ragic">Ragic</span></a>
     
+<script type="text/javascript">
+function refreshFrame(){
+    document.getElementById('ragic_webview').contentWindow.location.reload(true);
+}
+</script>
