@@ -1,7 +1,7 @@
 <html>
 
 <body>
-<input type="button" onclick="javascript:refreshFrame();" value="Refresh-3" />
+<input type="button" onclick="javascript:refreshFrame();" value="Refresh-4" />
 
 <div id="ragic_webview"></div>
 <script>
@@ -16,7 +16,7 @@
 
     function refreshFrame(){
         console.log(`refresh iframe`);
-        document.getElementById('ragic_webview').src = document.getElementById('ragic_webview').src;
+        document.getElementById('ragic_webview').src += '';
     }
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
