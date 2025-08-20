@@ -3,7 +3,7 @@
 <body>
 <div id="ragic_webview"></div>
     
-<input type="button" onclick="javascript:refreshFrame();" value="Refresh-6" />
+<input type="button" onclick="javascript:refreshFrame();" value="Refresh-7" />
 
 <script>
     var ragic_url = 'ap13.ragic.com/mfcheng/ragicsales/1';
@@ -16,14 +16,16 @@
     var showSheetName = true;
 
     function refreshFrame(){
+        console.log(`refresh page`);
+        window.location.reload();
+
         // document.getElementById('ragic_webview').src += '';
-        // const oSrc = document.getElementById('ragic_webview').rq.src;
-        const oSrc = "https://ap13.ragic.com/intl/common/load.js";
-        console.log(`refresh iframe, oSrc: ${oSrc}`);
+        // const oSrc = document.getElementById('ragic_webview').src;
+        // console.log(`refresh iframe, oSrc: ${oSrc}`);
         
-        const iframe = document.getElementById('ragic_webview');
-        const newSrc = oSrc + '?t=' + new Date().getTime();
-        iframe.setAttribute('src', newSrc);
+        // const iframe = document.getElementById('ragic_webview');
+        // const newSrc = oSrc + '?t=' + new Date().getTime();
+        // iframe.setAttribute('src', newSrc);
     }
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
