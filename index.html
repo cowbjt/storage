@@ -1,25 +1,17 @@
 <html>
 
 <body>
-<div id="ragic_webview"></div>
+<iframe src="https://ap13.ragic.com/mfcheng/ragicsales/1?PAGEID=ulV&embed&new&hidetop" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin allow-downloads" style="border:none;overflow-x:hidden;overflow-y:hidden;height:600px;width:100%;"></iframe>
     
-<input type="button" onclick="javascript:refreshFrame();" value="Refresh-7" />
+<input type="button" onclick="javascript:refreshFrame();" value="Refresh-8" />
 
 <script>
-    var ragic_url = 'ap13.ragic.com/mfcheng/ragicsales/1';
-    var ragic_feature = 'view';
-    var ragic_embedtype = '';
-    var exactMatch = true;
-    var pfv = [];
-    var fieldSummary = true;
-    var applyDefaultView = true;
-    var showSheetName = true;
 
     function refreshFrame(){
-        console.log(`refresh page`);
-        window.location.reload();
+        console.log(`refresh iframe`);
+        // window.location.reload();
 
-        // document.getElementById('ragic_webview').src += '';
+        document.getElementById('ragic_webview').src += '';
         // const oSrc = document.getElementById('ragic_webview').src;
         // console.log(`refresh iframe, oSrc: ${oSrc}`);
         
@@ -27,18 +19,7 @@
         // const newSrc = oSrc + '?t=' + new Date().getTime();
         // iframe.setAttribute('src', newSrc);
     }
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var rq = document.createElement('script');
-        rq.type = 'text/javascript';
-        rq.async = true;
-        rq.src = "https://ap13.ragic.com/intl/common/load.js";
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(rq);
-    })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://www.ragic.com/?ref_noscript">Online database form by Ragic.</a></noscript>
-<a href="https://www.ragic.com" id="ragic-link">online database form by <span class="logo-ragic">Ragic</span></a>
 
 </body>
 </html>
