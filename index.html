@@ -1,9 +1,10 @@
 <html>
 
 <body>
+<div id="ragic_webview"></div>
+    
 <input type="button" onclick="javascript:refreshFrame();" value="Refresh-4" />
 
-<div id="ragic_webview"></div>
 <script>
     var ragic_url = 'ap13.ragic.com/mfcheng/ragicsales/1';
     var ragic_feature = 'view';
@@ -16,7 +17,13 @@
 
     function refreshFrame(){
         console.log(`refresh iframe`);
-        document.getElementById('ragic_webview').src += '';
+        
+        // document.getElementById('ragic_webview').src += '';
+        
+        const iframe = document.getElementById('ragic_webview');
+        const originalSrc = iframe.getAttribute('data-src') || iframe.src.split('?')[0];
+        const newSrc = originalSrc + '?t=' + new Date().getTime();
+        iframe.setAttribute('src', newSrc);
     }
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
