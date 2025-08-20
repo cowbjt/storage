@@ -1,9 +1,9 @@
 <html>
 
 <body>
-<iframe src="https://ap13.ragic.com/mfcheng/ragicsales/1?PAGEID=ulV&embed&new&hidetop" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin allow-downloads" style="border:none;overflow-x:hidden;overflow-y:hidden;height:600px;width:100%;"></iframe>
+<iframe id='ragiciframe' src="https://ap13.ragic.com/mfcheng/ragicsales/1?PAGEID=ulV&embed&new&hidetop" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin allow-downloads" style="border:none;overflow-x:hidden;overflow-y:hidden;height:600px;width:100%;"></iframe>
     
-<input type="button" onclick="javascript:refreshFrame();" value="Refresh-8" />
+<input type="button" onclick="javascript:refreshFrame();" value="Refresh-9" />
 
 <script>
 
@@ -11,7 +11,7 @@
         console.log(`refresh iframe`);
         // window.location.reload();
 
-        document.getElementById('ragic_webview').src += '';
+        document.getElementById('ragiciframe').src += '';
         // const oSrc = document.getElementById('ragic_webview').src;
         // console.log(`refresh iframe, oSrc: ${oSrc}`);
         
